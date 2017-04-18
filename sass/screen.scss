@@ -1,0 +1,38 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+.default-grid {
+    height: 300px;
+    width: 500px;
+    margin: 100px auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.single-cell {
+  height: 10px;
+  width: 10px;
+  background: lightgray;
+  box-sizing: border-box;
+  border: .5px gray solid;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  &.active {
+    background: hotpink;
+  }
+  &.old {
+    background: darkred;
+  }
+
+  body {
+    background: dimgray;
+  }
+}
