@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
+import StartToggle from './start_toggle';
 
 export default class Controls extends Component {
     constructor(props) {
         super(props);
-        this.handleClick = this.handleClick.bind(this);
+        this.myClick = this.myClick.bind(this);
     }
 
-    handleClick(e) {
+    myClick(e) {
         this.props.myClick();
     }
 
@@ -14,7 +15,7 @@ export default class Controls extends Component {
         return (
             <div className="gol-controller">
                 <div className="btn btn-group">
-                    <a href="#" onClick={this.handleClick} className="btn btn-default">Start</a>
+                    <StartToggle myClick={this.myClick} />
                     <a href="#" className="btn btn-default">Clear</a>
                 </div>
             </div>

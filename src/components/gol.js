@@ -17,7 +17,7 @@ class GoL extends Component {
     render() {
         return (
             <div className='gol-container'>
-                <Controls myClick={this.myClick}/>
+                <Controls myClick={this.myClick} />
                 <Grid ref="gridRef" />
             </div>
         );
