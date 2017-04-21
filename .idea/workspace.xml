@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75edc318-7b93-43a9-b495-5922c081fa4e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/clear.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/static/js/main.6c068b6d.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/static/js/main.6c068b6d.js.map" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/asset-manifest.json" afterPath="$PROJECT_DIR$/docs/asset-manifest.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index.html" afterPath="$PROJECT_DIR$/docs/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/cell.js" afterPath="$PROJECT_DIR$/src/components/cell.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/controls.js" afterPath="$PROJECT_DIR$/src/components/controls.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/gol.js" afterPath="$PROJECT_DIR$/src/components/gol.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/grid.js" afterPath="$PROJECT_DIR$/src/components/grid.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/start_toggle.js" afterPath="$PROJECT_DIR$/src/components/start_toggle.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -78,7 +67,7 @@
         <entry file="file://$PROJECT_DIR$/docs/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="692" lean-forward="true" selection-start-line="0" selection-start-column="692" selection-end-line="0" selection-end-column="692" />
+              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -431,12 +420,12 @@
       <workItem from="1492452410654" duration="27854000" />
       <workItem from="1492627195766" duration="10232000" />
       <workItem from="1492728073758" duration="10072000" />
-      <workItem from="1492800114632" duration="3953000" />
+      <workItem from="1492800114632" duration="4190000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52111000" />
+    <option name="totallyTimeSpent" value="52348000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="994" y="24" width="920" height="1056" extended-state="4" />
@@ -789,7 +778,7 @@
     <entry file="file://$PROJECT_DIR$/docs/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="692" lean-forward="true" selection-start-line="0" selection-start-column="692" selection-end-line="0" selection-end-column="692" />
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
