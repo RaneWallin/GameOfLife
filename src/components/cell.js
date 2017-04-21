@@ -20,6 +20,10 @@ class Cell extends Component {
         });
     }
 
+    dieDie() {
+        this.setState({ alive: false });
+    }
+
     isAlive() {
         return this.state.alive;
     }

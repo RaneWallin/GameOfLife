@@ -10,8 +10,11 @@ class GoL extends Component {
     }
 
     myClick(e) {
-        console.log("test");
-        this.refs["gridRef"].toggleRunning();
+        if(e.target.id == 'clear-btn') {
+            this.refs["gridRef"].clearGrid();
+        } else {
+            this.refs["gridRef"].toggleRunning();
+        }
     }
 
     render() {

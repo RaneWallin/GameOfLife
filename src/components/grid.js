@@ -66,11 +66,15 @@ export default class Grid extends Component {
 
     toggleRunning() {
         if(this.state.myInterval !== '') {
-            clearInterval(this.state.myInterval);
-            this.setState({ myInterval: '' });
+            this.stopMe();
         } else {
             this.setState({myInterval: setInterval(this.runSimulation, this.state.heartbeat)});
         }
+    }
+
+    stopMe() {
+        clearInterval(this.state.myInterval);
+        this.setState({ myInterval: '' });
     }
 
     getState(status) {
@@ -94,6 +98,14 @@ export default class Grid extends Component {
 
     getRandomNumber() {
         return Math.floor((Math.random() * 10) + 1);
+    }
+
+    clearGrid() {
+        _.forEach(this.refs, cell => {
+            cell.dieDie()
+        });
+
+        this.stopMe();
     }
 
     renderCells() {

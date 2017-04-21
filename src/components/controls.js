@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import StartToggle from './start_toggle';
+import ClearMe from './clear';
 
 export default class Controls extends Component {
     constructor(props) {
@@ -8,7 +9,8 @@ export default class Controls extends Component {
     }
 
     myClick(e) {
-        this.props.myClick();
+        console.log(this.props.myClick(e));
+
     }
 
     render() {
@@ -16,7 +18,7 @@ export default class Controls extends Component {
             <div className="gol-controller">
                 <div className="btn btn-group">
                     <StartToggle myClick={this.myClick} />
-                    <a href="#" className="btn btn-default">Clear</a>
+                    <ClearMe myClick={this.myClick} />
                 </div>
             </div>
 
