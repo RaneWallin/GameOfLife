@@ -18,34 +18,51 @@ class Cell extends Component {
         this.setState({
             alive: !this.state.alive
         });
-
-        //this.isAlive();
-        //setTimeout(this.isAlive, 1);
-
     }
 
     isAlive() {
-        //console.log("status", this.state.alive);
         return this.state.alive;
     }
 
     addLivingNeighbor() {
-        this.setState({ livingNeighbor: this.state.livingNeighbor++ });
-        //setTimeout(console.log(this.state), 50);
+        let nb = this.state.livingNeighbor;
+        nb++;
+        this.setState({ livingNeighbor: nb });
     }
 
+
     queryNeighbors() {
-        console.log(this.state);
-        //return this.state.livingNeighbor;
+        return this.state.livingNeighbor;
     }
+
+    clearNeighbors() {
+        this.setState({ livingNeighbor: 0 });
+    }
+
+    updateMe() {
+        //console.log("updating status)");
+        if(this.isAlive()) {
+            if(this.queryNeighbors() !== 2 && this.queryNeighbors() !== 3)
+                this.toggleActive();
+        } else {
+            if(this.queryNeighbors() === 3)
+                this.toggleActive();
+        }
+
+        this.clearNeighbors();
+    }
+
 
     render() {
         return (
+
             <div
                 onClick={this.toggleActive}
                 className={this.state.alive?'single-cell active':'single-cell' }
             >
             </div>
+
+
         );
     }
 }

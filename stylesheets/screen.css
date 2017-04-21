@@ -101,3 +101,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .single-cell body {
   background: dimgray;
 }
+
+/* line 44, ../sass/screen.scss */
+.gol-controller {
+  padding: 20px;
+  border: 1px black solid;
+}

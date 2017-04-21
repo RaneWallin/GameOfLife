@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-//import ReactDOM from 'react-dom';
 import Cell from './cell';
+import _ from 'lodash';
 
 export default class Grid extends Component {
 
@@ -11,42 +11,66 @@ export default class Grid extends Component {
             gridX: 50,
             gridY: 30,
             cells: [],
-            cellRefs: []
+            cellRefs: [],
+            heartbeat: 500,
+            myInterval: '',
+            myCell: ''
         });
 
-        //this.getStatus = this.getStatus.bind(this);
+        this.runSimulation = this.runSimulation.bind(this);
+        this.updateStatus = this.updateStatus.bind(this);
     }
-
-    // componentWillMount() {
-    //     let theCells = [];
-    //     let cellRefs = [];
-    //     let key = 0;
-    //     this.setState({container});
-    //     for(let i = 0; i < this.state.gridY; i++) {
-    //         theCells[i]=[];
-    //         cellRefs[i]=[];
-    //         for(let j = 0; j < this.state.gridX; j++) {
-    //             theCells[i].push(
-    //                //ReactDOM.render(<Cell key={key} />, container)
-    //                 <Cell key={key} ref={key} />
-    //             );
-    //             key++;
-    //         }
-    //     }
-    //     //console.log("first cellRefs", cellRefs);
-    //     //this.setState({ cellRefs });
-    //     //console.log("theCells", theCells);
-    //     //console.log("cellRefs", this.state.cellRefs);
-    //     console.log(this.refs);
-    //     //this.setState({ cells: theCells});
-    // }
 
     checkCells() {
         this.state.cellRefs[0][0].isAlive();
     }
 
-    startSimulation() {
-       // const myInterval = setInterval(this.checkCells, this.state.heartbeat);
+    runSimulation() {
+
+        _.forEach(this.refs, cell => {
+            if(cell.isAlive()) this.notifyNeighbors(cell);
+        });
+
+        this.updateStatus();
+    }
+
+    updateStatus() {
+        _.forEach(this.refs, cell => {
+            cell.updateMe();
+        });
+    }
+
+    notifyNeighbors(cell) {
+        let key = cell.props.myRef;
+
+        this.notifyNeighbor(key-1);
+        this.notifyNeighbor(key+1);
+        this.notifyNeighbor(key-49);
+        this.notifyNeighbor(key-50);
+        this.notifyNeighbor(key-51);
+        this.notifyNeighbor(key+49);
+        this.notifyNeighbor(key+50);
+        this.notifyNeighbor(key+51);
+    }
+
+    notifyNeighbor(key) {
+        if(key < 0) {
+            key += ((this.state.gridX * this.state.gridY));
+        }
+        if(key >= this.state.gridX * this.state.gridY) {
+            key -= ((this.state.gridX * this.state.gridY));
+        }
+
+        this.refs[key].addLivingNeighbor();
+    }
+
+    toggleRunning() {
+        if(this.state.myInterval !== '') {
+            clearInterval(this.state.myInterval);
+            this.setState({ myInterval: '' });
+        } else {
+            this.setState({myInterval: setInterval(this.runSimulation, this.state.heartbeat)});
+        }
     }
 
     getState(status) {
@@ -54,13 +78,22 @@ export default class Grid extends Component {
     }
 
     componentDidMount() {
-        //console.log(this.refs);
-        //this.refs[1].isAlive();
-        for(let i = 0; i < 3; i++)
-            this.refs[1].addLivingNeighbor();
-        //this.refs[1].isAlive();
+        let num;
 
-       // console.log(this.refs[1].queryNeighbors());
+        Object.keys(this.refs).forEach(key => {
+            num = this.getRandomNumber();
+            if (num === 3) {
+                this.refs[key].toggleActive();
+            }
+        }
+    );
+
+       this.setState({ myInterval: setInterval(this.runSimulation, this.state.heartbeat)});
+
+    }
+
+    getRandomNumber() {
+        return Math.floor((Math.random() * 10) + 1);
     }
 
     renderCells() {
@@ -73,28 +106,27 @@ export default class Grid extends Component {
             cellRefs[i]=[];
             for(let j = 0; j < this.state.gridX; j++) {
                 theCells[i].push(
-                    <Cell key={key} ref={key} />
+                    <Cell key={key} myRef={key} ref={key} />
                 );
                 key++;
             }
         }
-        //console.log("first cellRefs", cellRefs);
-        //this.setState({ cellRefs });
-        //console.log("theCells", theCells);
-        //console.log("cellRefs", this.state.cellRefs);
-        //console.log(this.refs);
-        //this.setState({ cells: theCells});
+
         return theCells;
     }
 
+
+
     render() {
-        console.log("test");
-       // console.log(this);
-        //  console.log(this.checkCells());
+
         return (
+            <div>
             <div className="default-grid">
                 {this.renderCells()}
                 {this.checkCells}
+            </div>
+            <div className="cell-output" >
+            </div>
             </div>
         );
     }
