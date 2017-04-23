@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75edc318-7b93-43a9-b495-5922c081fa4e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/turn_viewer.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/static/css/main.4ee9b8e5.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/static/css/main.4ee9b8e5.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/static/js/main.3c258a15.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/static/js/main.3c258a15.js.map" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/9213648351f0258a3868bde8dbd96ade2888ed17/screen.scssc" afterPath="$PROJECT_DIR$/.sass-cache/9213648351f0258a3868bde8dbd96ade2888ed17/screen.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/asset-manifest.json" afterPath="$PROJECT_DIR$/docs/asset-manifest.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index.html" afterPath="$PROJECT_DIR$/docs/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/screen.scss" afterPath="$PROJECT_DIR$/sass/screen.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.css" afterPath="$PROJECT_DIR$/src/App.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/cell.js" afterPath="$PROJECT_DIR$/src/components/cell.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/clear.js" afterPath="$PROJECT_DIR$/src/components/clear.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/controls.js" afterPath="$PROJECT_DIR$/src/components/controls.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/gol.js" afterPath="$PROJECT_DIR$/src/components/gol.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/grid.js" afterPath="$PROJECT_DIR$/src/components/grid.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/start_toggle.js" afterPath="$PROJECT_DIR$/src/components/start_toggle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.css" afterPath="$PROJECT_DIR$/src/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/screen.css" afterPath="$PROJECT_DIR$/stylesheets/screen.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -48,8 +30,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docs/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="192" lean-forward="false" selection-start-line="2" selection-start-column="192" selection-end-line="2" selection-end-column="192" />
+            <state relative-caret-position="15">
+              <caret line="1" column="82" lean-forward="true" selection-start-line="1" selection-start-column="82" selection-end-line="1" selection-end-column="82" />
               <folding />
             </state>
           </provider>
@@ -446,12 +428,12 @@
       <workItem from="1492452410654" duration="27854000" />
       <workItem from="1492627195766" duration="10232000" />
       <workItem from="1492728073758" duration="10072000" />
-      <workItem from="1492800114632" duration="22442000" />
+      <workItem from="1492800114632" duration="22649000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70600000" />
+    <option name="totallyTimeSpent" value="70807000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="994" y="24" width="920" height="1056" extended-state="4" />
@@ -816,8 +798,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="192" lean-forward="false" selection-start-line="2" selection-start-column="192" selection-end-line="2" selection-end-column="192" />
+        <state relative-caret-position="15">
+          <caret line="1" column="82" lean-forward="true" selection-start-line="1" selection-start-column="82" selection-end-line="1" selection-end-column="82" />
           <folding />
         </state>
       </provider>
