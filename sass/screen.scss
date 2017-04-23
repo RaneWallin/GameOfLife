@@ -4,44 +4,88 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "compass";
 
 .default-grid {
     height: 300px;
     width: 500px;
     margin: 100px auto;
-    padding: 0;
+    @include box-shadow(mistyrose -1px -1px 5px 1px,
+                        mistyrose 1px 1px 5px 1px);
     display: flex;
     flex-wrap: wrap;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
 
 }
 
 .single-cell {
   height: 10px;
   width: 10px;
-  background: lightgray;
+  background: black;
   box-sizing: border-box;
-  border: .5px gray solid;
   display: inline-flex;
   margin: 0;
   padding: 0;
   vertical-align: top;
+  border-radius: 50%;
+  @include background-image(radial-gradient(1px 1px, #262626 2px, #0d0d0d 3px));
   &.active {
-    background: hotpink;
+    @include background-image(radial-gradient(1px 1px, pink 2px, hotpink 3px));
   }
   &.old {
-    background: darkred;
+    @include background-image(radial-gradient(1px 1px, #ff80c3 2px, #cc006d 3px));
   }
 
   body {
-    background: dimgray;
+    background: black;
   }
 }
 
-.gol-container {
+.btn-group:active {
+  border: none;
+}
 
+
+
+.gol-container {
+  padding: 20px;
+  width: 500px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -95%);
 }
 
 .gol-controller {
-  padding: 20px;
-  border: 1px black solid;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  position:relative;
+}
+
+.turn-viewer {
+  height: 30px;
+  width: 50px;
+  border: 1px white double;
+  float: right;
+  background: dimgray;
+  color: white;
+  text-align: center;
+}
+
+.turn-text {
+  margin: auto;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-default {
+  background: dimgray;
+  color: white;
 }

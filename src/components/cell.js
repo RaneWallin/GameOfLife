@@ -7,7 +7,8 @@ class Cell extends Component {
 
         this.state = {
             alive: false,
-            livingNeighbor: 0
+            livingNeighbor: 0,
+            isOld: false
         }
 
         this.toggleActive = this.toggleActive.bind(this);
@@ -18,10 +19,12 @@ class Cell extends Component {
         this.setState({
             alive: !this.state.alive
         });
+        //console.log("test");
     }
 
     dieDie() {
-        this.setState({ alive: false });
+        this.setState({ alive: false,
+                        isOld: false});
     }
 
     isAlive() {
@@ -47,7 +50,9 @@ class Cell extends Component {
         //console.log("updating status)");
         if(this.isAlive()) {
             if(this.queryNeighbors() !== 2 && this.queryNeighbors() !== 3)
-                this.toggleActive();
+                this.dieDie();
+            else
+                this.setState({ isOld: true });
         } else {
             if(this.queryNeighbors() === 3)
                 this.toggleActive();
@@ -62,7 +67,8 @@ class Cell extends Component {
 
             <div
                 onClick={this.toggleActive}
-                className={this.state.alive?'single-cell active':'single-cell' }
+                className={this.state.alive?
+                    (this.state.isOld?'single-cell active old': 'single-cell active'):'single-cell' }
             >
             </div>
 

@@ -12,13 +12,14 @@ export default class Grid extends Component {
             gridY: 30,
             cells: [],
             cellRefs: [],
-            heartbeat: 500,
+            heartbeat: 100,
             myInterval: '',
             myCell: ''
         });
 
         this.runSimulation = this.runSimulation.bind(this);
         this.updateStatus = this.updateStatus.bind(this);
+        //this.announceTurn = this.announceTurn.bind(this);
     }
 
     checkCells() {
@@ -32,7 +33,15 @@ export default class Grid extends Component {
         });
 
         this.updateStatus();
+        this.props.announceTurn();
     }
+
+    //announceTurn() {
+        //let newTurn = this.state.turn;
+        //newTurn ++;
+        //this.setState({ turn: newTurn });
+    //    this.props.announceTurn();
+    //}
 
     updateStatus() {
         _.forEach(this.refs, cell => {
@@ -42,15 +51,18 @@ export default class Grid extends Component {
 
     notifyNeighbors(cell) {
         let key = cell.props.myRef;
+        const X = this.state.gridX;
+        const Xp = X + 1;
+        const Xm = X - 1;
 
         this.notifyNeighbor(key-1);
         this.notifyNeighbor(key+1);
-        this.notifyNeighbor(key-49);
-        this.notifyNeighbor(key-50);
-        this.notifyNeighbor(key-51);
-        this.notifyNeighbor(key+49);
-        this.notifyNeighbor(key+50);
-        this.notifyNeighbor(key+51);
+        this.notifyNeighbor(key-Xm);
+        this.notifyNeighbor(key-X);
+        this.notifyNeighbor(key-Xp);
+        this.notifyNeighbor(key+Xm);
+        this.notifyNeighbor(key+X);
+        this.notifyNeighbor(key+Xp);
     }
 
     notifyNeighbor(key) {
@@ -62,6 +74,10 @@ export default class Grid extends Component {
         }
 
         this.refs[key].addLivingNeighbor();
+    }
+
+    isRunning() {
+        return this.state.myInterval !== '';
     }
 
     toggleRunning() {
@@ -97,7 +113,7 @@ export default class Grid extends Component {
     }
 
     getRandomNumber() {
-        return Math.floor((Math.random() * 10) + 1);
+        return Math.floor((Math.random() * 5) + 1);
     }
 
     clearGrid() {
@@ -106,6 +122,8 @@ export default class Grid extends Component {
         });
 
         this.stopMe();
+
+        this.props.announceTurn(true);
     }
 
     renderCells() {

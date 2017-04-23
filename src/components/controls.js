@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import StartToggle from './start_toggle';
+import TurnViewer from './turn_viewer';
 import ClearMe from './clear';
 
 export default class Controls extends Component {
@@ -9,17 +10,18 @@ export default class Controls extends Component {
     }
 
     myClick(e) {
-        console.log(this.props.myClick(e));
+        this.props.myClick(e);
 
     }
 
     render() {
         return (
             <div className="gol-controller">
-                <div className="btn btn-group">
-                    <StartToggle myClick={this.myClick} />
-                    <ClearMe myClick={this.myClick} />
+                <div className="btn-group">
+                    <StartToggle myClick={this.myClick} {...this.props } />
+                    <ClearMe myClick={this.myClick} { ...this.props } />
                 </div>
+                <TurnViewer { ...this.props } />
             </div>
 
         );

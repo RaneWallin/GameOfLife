@@ -67,43 +67,106 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 8, ../sass/screen.scss */
+/* line 9, ../sass/screen.scss */
 .default-grid {
   height: 300px;
   width: 500px;
   margin: 100px auto;
-  padding: 0;
+  -moz-box-shadow: mistyrose -1px -1px 5px 1px, mistyrose 1px 1px 5px 1px;
+  -webkit-box-shadow: mistyrose -1px -1px 5px 1px, mistyrose 1px 1px 5px 1px;
+  box-shadow: mistyrose -1px -1px 5px 1px, mistyrose 1px 1px 5px 1px;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
 }
 
-/* line 18, ../sass/screen.scss */
+/* line 24, ../sass/screen.scss */
 .single-cell {
   height: 10px;
   width: 10px;
-  background: lightgray;
+  background: black;
   box-sizing: border-box;
-  border: .5px gray solid;
   display: inline-flex;
   margin: 0;
   padding: 0;
   vertical-align: top;
-}
-/* line 28, ../sass/screen.scss */
-.single-cell.active {
-  background: hotpink;
-}
-/* line 31, ../sass/screen.scss */
-.single-cell.old {
-  background: darkred;
+  border-radius: 50%;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjFweCIgY3k9IjFweCIgcj0iMyUiPjxzdG9wIG9mZnNldD0iNjYuNjY2NjclIiBzdG9wLWNvbG9yPSIjMjYyNjI2Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMGQwZDBkIi8+PC9yYWRpYWxHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -moz-radial-gradient(1px 1px, #262626 2px, #0d0d0d 3px);
+  background-image: -webkit-radial-gradient(1px 1px, #262626 2px, #0d0d0d 3px);
+  background-image: radial-gradient(1px 1px, #262626 2px, #0d0d0d 3px);
 }
 /* line 35, ../sass/screen.scss */
+.single-cell.active {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjFweCIgY3k9IjFweCIgcj0iMyUiPjxzdG9wIG9mZnNldD0iNjYuNjY2NjclIiBzdG9wLWNvbG9yPSIjZmZjMGNiIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmY2OWI0Ii8+PC9yYWRpYWxHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -moz-radial-gradient(1px 1px, #ffc0cb 2px, #ff69b4 3px);
+  background-image: -webkit-radial-gradient(1px 1px, #ffc0cb 2px, #ff69b4 3px);
+  background-image: radial-gradient(1px 1px, #ffc0cb 2px, #ff69b4 3px);
+}
+/* line 38, ../sass/screen.scss */
+.single-cell.old {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjFweCIgY3k9IjFweCIgcj0iMyUiPjxzdG9wIG9mZnNldD0iNjYuNjY2NjclIiBzdG9wLWNvbG9yPSIjZmY4MGMzIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjY2MwMDZkIi8+PC9yYWRpYWxHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -moz-radial-gradient(1px 1px, #ff80c3 2px, #cc006d 3px);
+  background-image: -webkit-radial-gradient(1px 1px, #ff80c3 2px, #cc006d 3px);
+  background-image: radial-gradient(1px 1px, #ff80c3 2px, #cc006d 3px);
+}
+/* line 42, ../sass/screen.scss */
 .single-cell body {
-  background: dimgray;
+  background: black;
 }
 
-/* line 44, ../sass/screen.scss */
-.gol-controller {
+/* line 47, ../sass/screen.scss */
+.btn-group:active {
+  border: none;
+}
+
+/* line 53, ../sass/screen.scss */
+.gol-container {
   padding: 20px;
-  border: 1px black solid;
+  width: 500px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -95%);
+}
+
+/* line 63, ../sass/screen.scss */
+.gol-controller {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  position: relative;
+}
+
+/* line 70, ../sass/screen.scss */
+.turn-viewer {
+  height: 30px;
+  width: 50px;
+  border: 1px white double;
+  float: right;
+  background: dimgray;
+  color: white;
+  text-align: center;
+}
+
+/* line 80, ../sass/screen.scss */
+.turn-text {
+  margin: auto;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 88, ../sass/screen.scss */
+.btn-default {
+  background: dimgray;
+  color: white;
 }
