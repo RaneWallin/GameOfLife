@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75edc318-7b93-43a9-b495-5922c081fa4e" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/static/css/main.beae9922.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/static/css/main.beae9922.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/static/js/main.4be865fe.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/static/js/main.4be865fe.js.map" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/9213648351f0258a3868bde8dbd96ade2888ed17/screen.scssc" afterPath="$PROJECT_DIR$/.sass-cache/9213648351f0258a3868bde8dbd96ade2888ed17/screen.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/asset-manifest.json" afterPath="$PROJECT_DIR$/docs/asset-manifest.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index.html" afterPath="$PROJECT_DIR$/docs/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/screen.scss" afterPath="$PROJECT_DIR$/sass/screen.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/screen.css" afterPath="$PROJECT_DIR$/stylesheets/screen.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,8 +29,8 @@
       <file leaf-file-name="screen.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/screen.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="46" column="19" lean-forward="false" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
+            <state relative-caret-position="348">
+              <caret line="57" column="19" lean-forward="false" selection-start-line="57" selection-start-column="19" selection-end-line="57" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -31,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/docs/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
-              <caret line="1" column="201" lean-forward="false" selection-start-line="1" selection-start-column="201" selection-end-line="1" selection-end-column="201" />
+              <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -43,7 +52,7 @@
             <state relative-caret-position="0">
               <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
               <folding>
-                <marker date="1492973272249" expanded="true" signature="0:2" ph="/*...*/" />
+                <marker date="1492975371821" expanded="true" signature="0:2" ph="/*...*/" />
               </folding>
             </state>
           </provider>
@@ -428,12 +437,12 @@
       <workItem from="1492452410654" duration="27854000" />
       <workItem from="1492627195766" duration="10232000" />
       <workItem from="1492728073758" duration="10072000" />
-      <workItem from="1492800114632" duration="22754000" />
+      <workItem from="1492800114632" duration="23612000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70912000" />
+    <option name="totallyTimeSpent" value="71770000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="994" y="24" width="920" height="1056" extended-state="4" />
@@ -727,7 +736,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
           <folding>
-            <marker date="1492973272249" expanded="true" signature="0:2" ph="/*...*/" />
+            <marker date="1492975371821" expanded="true" signature="0:2" ph="/*...*/" />
           </folding>
         </state>
       </provider>
@@ -790,8 +799,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/screen.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="46" column="19" lean-forward="false" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
+        <state relative-caret-position="348">
+          <caret line="57" column="19" lean-forward="false" selection-start-line="57" selection-start-column="19" selection-end-line="57" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -799,7 +808,7 @@
     <entry file="file://$PROJECT_DIR$/docs/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="201" lean-forward="false" selection-start-line="1" selection-start-column="201" selection-end-line="1" selection-end-column="201" />
+          <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
           <folding />
         </state>
       </provider>
