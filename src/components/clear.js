@@ -13,7 +13,7 @@ export default class ClearMe extends Component {
     }
     render() {
         return (
-            <a href="#" id="clear-btn" onClick={this.myClick} className="btn btn-default">Clear</a>
+            <a href="#" id="clear-btn" onClick={this.myClick} className="btn">Clear</a>
         );
     }
 }

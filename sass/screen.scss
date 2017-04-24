@@ -9,21 +9,16 @@
 .default-grid {
     height: 300px;
     width: 500px;
-    margin: 100px auto;
-    @include box-shadow(mistyrose -1px -1px 5px 1px,
-                        mistyrose 1px 1px 5px 1px);
+    @include box-shadow(pink -1px -1px 5px 1px,
+                        pink 1px 1px 5px 1px);
     display: flex;
     flex-wrap: wrap;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -30%);
-
+    position: relative;
 }
 
 .single-cell {
-  height: 10px;
-  width: 10px;
+  height: 3.33%;
+  width: 2%;
   background: black;
   box-sizing: border-box;
   display: inline-flex;
@@ -51,29 +46,66 @@
 
 
 .gol-container {
-  padding: 20px;
   width: 500px;
-  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
   position: absolute;
+  justify-content: center;
   margin-top: 50px;
   left: 50%;
   transform: translate(-50%);
 }
 
+ol {
+  list-style-type: upper-roman;
+  margin: 10px 0 10px 50px;
+}
+
+li {
+  margin: 10px 10px 0 0;
+}
+
+.instructions > h3 {
+  display: flex;
+  align-self: center;
+  font-size: x-large;
+}
+
+.instructions > hr {
+  width: 100%;
+  color: whitesmoke;
+}
+
+.instructions {
+  position: relative;
+  @include box-shadow(pink -1px -1px 5px 1px,
+          pink 1px 1px 5px 1px);
+  margin-top: 20px;
+  padding: 10px;
+  color: whitesmoke;
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+}
+
 .gol-controller {
   top: 0;
   left: 50%;
-  transform: translate(-50%, 0);
+  transform: translate(-50%);
   position:relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
 }
 
 .turn-viewer {
-  height: 30px;
+  height: 100%;
   width: 50px;
-  border: 1px white double;
-  float: right;
+  border: 1px pink double;
+  margin-left: auto;
   background: dimgray;
-  color: white;
+  color: pink;
   text-align: center;
 }
 
@@ -85,7 +117,39 @@
   transform: translate(-50%, -50%);
 }
 
-.btn-default {
+.btn {
+  padding: 5px;
+  height: 30px;
+  display: flex;
   background: dimgray;
-  color: white;
+  border: 1px pink solid;
+  color: pink;
+  float: left;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 10% 10% 0 0;
+  &:hover {
+    background: gray;
+    color: white;
+  }
+  &:visited {
+    color: pink;
+  }
+
+}
+
+p {
+  margin-top: 10px;
+  color: whitesmoke;
+}
+
+a:visited {
+  color: whitesmoke;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  flex-flow: column wrap;
+  align-items: center;
 }

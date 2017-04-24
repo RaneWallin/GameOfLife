@@ -14,7 +14,7 @@ export default class StartToggle extends Component {
 
     render() {
         return (
-            <a href="#" onClick={this.myClick} className="btn btn-default">{this.props.running?'Stop':'Start'}</a>
+            <a href="#" onClick={this.myClick} className="btn">{this.props.running?'Stop':'Start'}</a>
         );
     }
 }

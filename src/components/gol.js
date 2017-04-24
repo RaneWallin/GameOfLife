@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Controls from "./controls";
 import Grid from "./grid";
+import Instructions from './instructions';
+import Footer from './footer';
 
 class GoL extends Component {
     constructor(props) {
@@ -44,6 +46,8 @@ class GoL extends Component {
             <div className='gol-container'>
                 <Controls myClick={this.myClick} running={this.state.gameRunning} turn={ this.state.turn } />
                 <Grid announceTurn={this.announceTurn} ref="gridRef" />
+                <Instructions />
+                <Footer />
             </div>
         );
     }

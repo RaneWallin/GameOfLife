@@ -71,22 +71,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .default-grid {
   height: 300px;
   width: 500px;
-  margin: 100px auto;
-  -moz-box-shadow: mistyrose -1px -1px 5px 1px, mistyrose 1px 1px 5px 1px;
-  -webkit-box-shadow: mistyrose -1px -1px 5px 1px, mistyrose 1px 1px 5px 1px;
-  box-shadow: mistyrose -1px -1px 5px 1px, mistyrose 1px 1px 5px 1px;
+  -moz-box-shadow: pink -1px -1px 5px 1px, pink 1px 1px 5px 1px;
+  -webkit-box-shadow: pink -1px -1px 5px 1px, pink 1px 1px 5px 1px;
+  box-shadow: pink -1px -1px 5px 1px, pink 1px 1px 5px 1px;
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -30%);
 }
 
-/* line 24, ../sass/screen.scss */
+/* line 19, ../sass/screen.scss */
 .single-cell {
-  height: 10px;
-  width: 10px;
+  height: 3.33%;
+  width: 2%;
   background: black;
   box-sizing: border-box;
   display: inline-flex;
@@ -100,7 +96,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-image: -webkit-radial-gradient(1px 1px, #262626 2px, #0d0d0d 3px);
   background-image: radial-gradient(1px 1px, #262626 2px, #0d0d0d 3px);
 }
-/* line 35, ../sass/screen.scss */
+/* line 30, ../sass/screen.scss */
 .single-cell.active {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjFweCIgY3k9IjFweCIgcj0iMyUiPjxzdG9wIG9mZnNldD0iNjYuNjY2NjclIiBzdG9wLWNvbG9yPSIjZmZjMGNiIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmY2OWI0Ii8+PC9yYWRpYWxHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
   background-size: 100%;
@@ -108,7 +104,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-image: -webkit-radial-gradient(1px 1px, #ffc0cb 2px, #ff69b4 3px);
   background-image: radial-gradient(1px 1px, #ffc0cb 2px, #ff69b4 3px);
 }
-/* line 38, ../sass/screen.scss */
+/* line 33, ../sass/screen.scss */
 .single-cell.old {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjFweCIgY3k9IjFweCIgcj0iMyUiPjxzdG9wIG9mZnNldD0iNjYuNjY2NjclIiBzdG9wLWNvbG9yPSIjZmY4MGMzIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjY2MwMDZkIi8+PC9yYWRpYWxHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
   background-size: 100%;
@@ -116,47 +112,89 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-image: -webkit-radial-gradient(1px 1px, #ff80c3 2px, #cc006d 3px);
   background-image: radial-gradient(1px 1px, #ff80c3 2px, #cc006d 3px);
 }
-/* line 42, ../sass/screen.scss */
+/* line 37, ../sass/screen.scss */
 .single-cell body {
   background: black;
 }
 
-/* line 47, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 .btn-group:active {
   border: none;
 }
 
-/* line 53, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 .gol-container {
-  padding: 20px;
   width: 500px;
-  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
   position: absolute;
+  justify-content: center;
   margin-top: 50px;
   left: 50%;
   transform: translate(-50%);
 }
 
-/* line 63, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
+ol {
+  list-style-type: upper-roman;
+  margin: 10px 0 10px 50px;
+}
+
+/* line 64, ../sass/screen.scss */
+li {
+  margin: 10px 10px 0 0;
+}
+
+/* line 68, ../sass/screen.scss */
+.instructions > h3 {
+  display: flex;
+  align-self: center;
+  font-size: x-large;
+}
+
+/* line 74, ../sass/screen.scss */
+.instructions > hr {
+  width: 100%;
+  color: whitesmoke;
+}
+
+/* line 79, ../sass/screen.scss */
+.instructions {
+  position: relative;
+  -moz-box-shadow: pink -1px -1px 5px 1px, pink 1px 1px 5px 1px;
+  -webkit-box-shadow: pink -1px -1px 5px 1px, pink 1px 1px 5px 1px;
+  box-shadow: pink -1px -1px 5px 1px, pink 1px 1px 5px 1px;
+  margin-top: 20px;
+  padding: 10px;
+  color: whitesmoke;
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+}
+
+/* line 91, ../sass/screen.scss */
 .gol-controller {
   top: 0;
   left: 50%;
-  transform: translate(-50%, 0);
+  transform: translate(-50%);
   position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
-/* line 70, ../sass/screen.scss */
+/* line 102, ../sass/screen.scss */
 .turn-viewer {
-  height: 30px;
+  height: 100%;
   width: 50px;
-  border: 1px white double;
-  float: right;
+  border: 1px pink double;
+  margin-left: auto;
   background: dimgray;
-  color: white;
+  color: pink;
   text-align: center;
 }
 
-/* line 80, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 .turn-text {
   margin: auto;
   position: relative;
@@ -165,8 +203,44 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: translate(-50%, -50%);
 }
 
-/* line 88, ../sass/screen.scss */
-.btn-default {
+/* line 120, ../sass/screen.scss */
+.btn {
+  padding: 5px;
+  height: 30px;
+  display: flex;
   background: dimgray;
+  border: 1px pink solid;
+  color: pink;
+  float: left;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 10% 10% 0 0;
+}
+/* line 131, ../sass/screen.scss */
+.btn:hover {
+  background: gray;
   color: white;
+}
+/* line 135, ../sass/screen.scss */
+.btn:visited {
+  color: pink;
+}
+
+/* line 141, ../sass/screen.scss */
+p {
+  margin-top: 10px;
+  color: whitesmoke;
+}
+
+/* line 146, ../sass/screen.scss */
+a:visited {
+  color: whitesmoke;
+}
+
+/* line 150, ../sass/screen.scss */
+footer {
+  display: flex;
+  width: 100%;
+  flex-flow: column wrap;
+  align-items: center;
 }
