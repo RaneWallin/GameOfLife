@@ -2,7 +2,7 @@
   "name": "gol",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http:ranewallin.github.io/GameOfLife",
+  "homepage": "https://blasph.me/GameOfLife",
   "dependencies": {
     "lodash": "^4.17.11",
     "microevent": "^1.0.0",
