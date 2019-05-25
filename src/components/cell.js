@@ -32,9 +32,9 @@ class Cell extends Component {
     }
 
     addLivingNeighbor() {
-        let nb = this.state.livingNeighbor;
-        nb++;
-        this.setState({ livingNeighbor: nb });
+        let livingNeighbor = this.state.livingNeighbor;
+        livingNeighbor++;
+        this.setState({ livingNeighbor });
     }
 
 

@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "http:ranewallin.github.io/GameOfLife",
   "dependencies": {
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.11",
     "microevent": "^1.0.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
