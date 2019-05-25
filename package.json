@@ -8,7 +8,8 @@
     "microevent": "^1.0.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "react-tooltip": "^3.3.0"
+    "react-tooltip": "^3.3.0",
+    "mime": ">=1.4.1"
   },
   "devDependencies": {
     "react-scripts": "0.9.5"
