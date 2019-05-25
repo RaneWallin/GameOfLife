@@ -3,6 +3,9 @@ Game Of Life
 ### Description
 This project is based off of [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) simulation. It uses React without Redux or Context. 
 
+---
+### Solution
+
 #### About Conway's Game of Life
 From [Wikipedia](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life): 
 >The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician 
