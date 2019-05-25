@@ -1,4 +1,4 @@
-#Game Of Life
+Game Of Life
 ---
 ### Description
 This project is based off of [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) simulation. It uses React without Redux or Context. 
