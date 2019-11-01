@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://blasph.me/GameOfLife",
   "dependencies": {
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.13",
     "microevent": "^1.0.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
